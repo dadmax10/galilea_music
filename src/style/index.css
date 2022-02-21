@@ -1,0 +1,335 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    background: #000;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    overflow-x: hidden;
+
+
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: #111;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #d45;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+/* header */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 3em;
+}
+
+/* navegacion */
+
+#nav-header{
+    width: 100%;
+    padding: 1em;
+    background: rgb(24, 44, 56);
+    display: flex;
+    position: fixed;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 9999999999;
+}
+
+.nav-title{
+    font-size: 2em;
+}
+
+
+.nav-ul{
+    display: flex;
+    justify-self: center;
+    margin-right: 1em;
+}
+
+.nav-a{
+    color:#fff;
+    margin-left: 2em;
+    list-style: none;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.nav-a:hover{
+    text-decoration: line-through;
+}
+
+
+
+/* Presentacion */
+
+    /* imagenes slider */
+.press-header{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    padding:1em;
+}
+
+.press-content-img{
+    margin-top: 5em;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    
+}
+
+.press-img{
+    width: 32%;
+    box-sizing: content-box;
+    transition: 1s;
+    margin-left: 0.7em;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.press-img:hover{
+    width: 100%;
+    box-sizing: content-box;
+    transition: 2s;
+    opacity: 0.5;
+}
+
+    /* textos */
+
+.press-title{
+    font-size: 4em;
+    text-align: center;
+}
+
+.press-desc{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.content-press-red{
+    width:40%;
+    margin:auto;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.press-red{
+    text-decoration: none;
+    color:rgb(113, 133, 146);
+}
+
+.press-red:hover{
+    text-decoration:underline;
+}
+
+/* musica */
+
+.title-music-principal{
+    font-size:3em;
+    padding: 1.2em;
+    text-align: center;
+    background: url("../assets/img/AirBrush_20211121165306.jpg");
+    background-size:cover;
+    background-position: center;
+    transition: 2s;
+    background-repeat: no-repeat;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
+.title-music-principal:hover{
+    background: url("../assets/img/AirBrush_20211127185620.jpg");
+    background-position: 30px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition:1s;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    -ms-transition:1s;
+    -o-transition:1s;
+}
+
+
+#music{
+    width:100%;
+    overflow: hidden;
+}
+
+
+
+.content-music{
+    width:100%;
+    height: auto;
+    padding: 0.5em;
+    position: relative;
+}
+.music-bg{
+    width:100%;
+    opacity: .1;
+    position: absolute;
+    z-index: 0;
+}
+
+.content-music-principal{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.music-principal{
+    position: absolute;
+    width: 50%;
+    height:60vh;
+    right:1em;
+    bottom:3em;
+    z-index: 99;
+}
+
+.title-music{
+    position: relative;
+    top: 3em;
+    left: .3em;
+    font-size: 5em;
+}
+
+.hr-music{
+    height:1vh;
+    width:25em;
+    background: #fff;
+    position: relative;
+    top: 14.8em;
+    left: 1.8em;
+}
+
+.desc-music{
+    position: relative;
+    top:10em;
+    left:1.2em;
+    font-size: 1.5em;
+}
+
+/* eventos */
+.title-event{
+    font-size:3em;
+    padding: 1.2em;
+    text-align: center;
+    background: url("../assets/img/AirBrush_20211121223122.jpg");
+    background-size: cover;
+    background-position: center;
+    transition:2s;
+    -webkit-transition:2s;
+    -moz-transition:2s;
+    -ms-transition:2s;
+    -o-transition:2s;
+}
+
+.title-event:hover{
+    background: url("../assets/img/AirBrush_20211121223038.jpg");
+    background-size: cover;
+    background-position: center;
+    transition:1s;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    -ms-transition:1s;
+    -o-transition:1s;
+}
+
+#eventos{
+    width: 100%;
+    padding: 2em;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    column-gap: 1em ;
+    background: #111;
+}
+
+.event-content{
+    margin-top: 2em;
+    text-align: center;
+}
+
+.event-img{
+    width: 75%;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    background: rgb(24, 44, 56);
+}
+
+.estructra{
+    background: #d45;
+    animation-timing-function: cubic-bezier(1,-0.05,.75,.16);
+}
+
+
+
+
+
+
+
+
+/* responsive design */
+
+@media only screen and (max-width: 1000px) {
+    .press-content-img{
+        overflow-x: scroll;
+    }
+
+    .press-img{
+        width: 100%;
+    }
+
+    /* scroll bar */
+
+    .press-content-img::-webkit-scrollbar{
+        height:7px;
+        background: rgb(6, 101, 156);
+    }
+
+    .press-content-img::-webkit-scrollbar-thumb{
+        background: #d45;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

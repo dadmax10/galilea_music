@@ -1,0 +1,15 @@
+[
+        {
+            "videoBg" : "../assets/video/Graduacion De Teologia-1.m4v",
+            "video" : "../assets/video/REPETICION CORRECION NO CALLARE.mp4",
+            "title" : "NO CALLARE",
+            "desc" : "No Callare!!"
+        },
+
+        {
+            "videoBg" : "../assets/video/ULTRA VIDEO DE FIN DE AÑO CCGALILEA.mp4",
+            "video" : "../assets/video/MI dIOS.mp4",
+            "title" : "MI DIOS",
+            "desc" : "Mi Dios!!"
+        }
+]
